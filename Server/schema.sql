@@ -1,0 +1,18 @@
+DROP DATABASE IF EXISTS sherpacodes;
+CREATE DATABASE sherpacodes;
+use sherpacodes;
+
+CREATE TABLE employees (
+    ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(20) NOT NULL,
+    Age INT,
+    City VARCHAR(20),
+    Position VARCHAR(20),
+    Salary INT
+);
+
+CREATE TABLE users (
+    ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    Email VARCHAR(30) NOT NULL,
+    Password VARCHAR(30) NOT NULL
+);
